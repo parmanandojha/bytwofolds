@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1768144259945",
+    "name": "vdan",
+    "email": "ncana@gmail.com",
+    "phone": "8700070746",
+    "goal": "sales",
+    "websiteOption": "need",
+    "websiteUrl": null,
+    "aboutBusiness": "cdbs ",
+    "budget": null,
+    "createdAt": "2026-01-11T15:10:59.945Z"
+  },
+  {
+    "id": "1768145341770",
+    "name": "mayank",
+    "email": "mad112mayank@gmail.com",
+    "phone": "8700070746",
+    "goal": "lead gen",
+    "websiteOption": "need",
+    "websiteUrl": null,
+    "aboutBusiness": " Service - interior designer",
+    "budget": null,
+    "createdAt": "2026-01-11T15:29:01.770Z"
+  },
+  {
+    "id": "1768500759835",
+    "name": "ncals",
+    "email": "jca@gmail.com",
+    "phone": "8700070746",
+    "goal": "sales",
+    "websiteOption": "need",
+    "websiteUrl": null,
+    "aboutBusiness": "qca",
+    "budget": 20000,
+    "createdAt": "2026-01-15T18:12:39.835Z"
+  }
+]
