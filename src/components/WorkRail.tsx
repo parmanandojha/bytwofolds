@@ -22,8 +22,8 @@ export function WorkRail() {
     <section id="work" className="join-prev" aria-labelledby="work-h">
       <div className="bg-slate text-ink">
         <div className="site-grid items-end gap-y-6 section-t pb-16 desk:pb-20">
-          <Tag className="col-span-full">{work.label}</Tag>
-          <h2 id="work-h" data-split className="col-span-full max-w-[15ch] text-head tight tab:col-span-6 desk:col-span-8">{work.title}</h2>
+          <Tag as="h2" className="col-span-full">{work.label}</Tag>
+          <h3 id="work-h" data-split className="text-balance col-span-full max-w-[15ch] text-head tight tab:col-span-6 desk:col-span-8">{work.title}</h3>
           <div className="col-span-full flex gap-2 tab:col-span-2 tab:justify-end desk:col-span-4">
             <button className={btn} onClick={() => go(-1)} disabled={edge.start} aria-label="Previous project"><Arrow className="rotate-180" /></button>
             <button className={btn} onClick={() => go(1)} disabled={edge.end} aria-label="Next project"><Arrow /></button>

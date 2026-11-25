@@ -5,13 +5,13 @@ import { DetailRows } from "@/components/DetailRows";
 import { Scene } from "@/components/Scene";
 import { Cta, Tag } from "@/components/ui";
 
-export const metadata = pageMeta("About", "Why ByTwoFolds exists: the quiet moment when a stranger opens your website and decides whether to trust you.", "/about");
+export const metadata = pageMeta("About Our Delhi Website Studio", "ByTwoFolds is a Delhi-based website studio. Why we exist: the quiet moment when a stranger opens your website and decides whether to trust you.", "/about");
 
 export default function About() {
   return (
     <>
       <JsonLd data={breadcrumbs([["About", "/about"]])} />
-      <PageHead tag="About" title={about.title}><p>{about.intro}</p></PageHead>
+      <PageHead tag="About ByTwoFolds, a website studio in Delhi" title={about.title}><p>{about.intro}</p></PageHead>
       <Scene name="sea" label="A small folded paper boat alone on a dark sea" className="relative h-[70svh] overflow-hidden bg-[#0c0d0e] desk:h-[90svh]" />
       <section className="bg-slate section-y text-ink" aria-label="Our reason">
         <div className="site-grid gap-y-10">

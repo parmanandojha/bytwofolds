@@ -1,8 +1,8 @@
-import { site, services } from "./content";
+import { projects, site, services } from "./content";
 
 export const organization = {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
+  "@type": ["Organization", "ProfessionalService"],
   "@id": `${site.url}/#organization`,
   name: site.name,
   url: site.url,
@@ -10,6 +10,10 @@ export const organization = {
   description: site.description,
   logo: `${site.url}/icon-512.png`,
   image: `${site.url}/opengraph-image`,
+  slogan: "Before they trust you, they judge your website.",
+  address: { "@type": "PostalAddress", addressLocality: "Delhi", addressRegion: "Delhi", addressCountry: "IN" },
+  areaServed: [{ "@type": "Country", name: "India" }, { "@type": "Place", name: "Worldwide" }],
+  contactPoint: { "@type": "ContactPoint", contactType: "sales", email: site.email, url: `${site.url}/contact`, areaServed: ["IN", "Worldwide"], availableLanguage: ["en"] },
   knowsAbout: ["Website design", "Website development", "Meta advertising", "Search engine optimisation", "Answer engine optimisation", "Structured data for AI", "Website care"],
   hasOfferCatalog: {
     "@type": "OfferCatalog",
@@ -27,8 +31,28 @@ export const website = {
   "@id": `${site.url}/#website`,
   name: site.name,
   url: site.url,
-  inLanguage: "en",
+  inLanguage: "en-IN",
   publisher: { "@id": organization["@id"] },
+};
+
+export const homePage = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": `${site.url}/#webpage`,
+  url: site.url,
+  name: site.title,
+  description: site.description,
+  inLanguage: "en-IN",
+  isPartOf: { "@id": website["@id"] },
+  about: { "@id": organization["@id"] },
+  primaryImageOfPage: `${site.url}/opengraph-image`,
+};
+
+export const workList = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: `Websites by ${site.name}`,
+  itemListElement: projects.map((p, i) => ({ "@type": "ListItem", position: i + 1, name: p.name, url: `${site.url}/work/${p.slug}` })),
 };
 
 export const faqSchema = (items: { q: string; a: string }[]) => ({

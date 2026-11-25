@@ -1,11 +1,11 @@
 import Link from "next/link";
 
-export function Tag({ children, className = "" }: { children: React.ReactNode; className?: string }) {
+export function Tag({ children, className = "", as: T = "p" }: { children: React.ReactNode; className?: string; as?: "p" | "h2" }) {
   return (
-    <p className={`label flex items-center gap-2 self-start ${className}`}>
+    <T className={`label flex items-center gap-2 self-start ${className}`}>
       <span className="size-1.5 shrink-0 rounded-full bg-signal" aria-hidden="true" />
       {children}
-    </p>
+    </T>
   );
 }
 

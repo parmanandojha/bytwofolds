@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   description: site.description,
   applicationName: site.name,
   category: "business",
-  openGraph: { type: "website", siteName: site.name, locale: "en_US", title: site.title, description: site.description },
+  openGraph: { type: "website", siteName: site.name, locale: "en_IN", title: site.title, description: site.description },
   twitter: { card: "summary_large_image" },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 } },
 };
@@ -31,7 +31,7 @@ const boot = `try{if(sessionStorage.getItem("btf"))document.documentElement.clas
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={host.variable} suppressHydrationWarning>
+    <html lang="en-IN" className={host.variable} suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: boot }} />
       </head>

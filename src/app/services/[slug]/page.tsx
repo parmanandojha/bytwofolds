@@ -13,7 +13,7 @@ export const generateStaticParams = () => services.map(({ slug }) => ({ slug }))
 export async function generateMetadata({ params }: P) {
   const { slug } = await params;
   const s = services.find((x) => x.slug === slug);
-  return s ? pageMeta(`${s.name} Agency`, s.answer, `/services/${slug}`) : {};
+  return s ? pageMeta(`${s.name} in Delhi`, s.answer.length > 170 ? `${s.answer.split(". ")[0]}.` : s.answer, `/services/${slug}`) : {};
 }
 
 export default async function ServicePage({ params }: P) {
@@ -40,7 +40,7 @@ export default async function ServicePage({ params }: P) {
         </div>
         <div className="site-grid mt-auto gap-y-8 pt-40 pb-8 desk:pb-12">
           <div className="col-span-full desk:col-span-7">
-            <p data-fade data-hero="0.1" className="label mb-4 flex items-center gap-2"><span className="size-1.5 rounded-full bg-signal" aria-hidden="true" />{s.name}</p>
+            <p data-fade data-hero="0.1" className="label mb-4 flex items-center gap-2"><span className="size-1.5 rounded-full bg-signal" aria-hidden="true" />{s.name} for businesses in India and abroad</p>
             <h1 id="s-h" data-split data-hero="0" className="max-w-[12ch] text-hero tight">{s.headline}</h1>
           </div>
           <div data-fade data-hero="0.5" className="col-span-full flex flex-col justify-between gap-8 self-end bg-ink p-6 text-white tab:col-span-6 desk:col-span-4 desk:col-start-9">

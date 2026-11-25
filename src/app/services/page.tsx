@@ -15,6 +15,7 @@ export default function Services() {
       <JsonLd data={breadcrumbs([["Services", "/services"]])} />
       <section className="flex min-h-[80svh] flex-col bg-ink" aria-labelledby="services-h">
         <div className="site-grid pt-36 desk:pt-48">
+          <p className="label col-span-full mb-6 flex items-center gap-2"><span className="size-1.5 rounded-full bg-signal" aria-hidden="true" />Website design, development and Meta ads services</p>
           <h1 id="services-h" data-split data-hero="0" className="col-span-full max-w-[14ch] text-hero tight">Everything between the click and the yes.</h1>
         </div>
         <div className="site-grid mt-auto items-end gap-y-12 pt-24 pb-16">
@@ -60,7 +61,7 @@ export default function Services() {
 
       <section className="relative bg-slate section-y text-ink" aria-labelledby="start">
         <div className="site-grid gap-y-8 head-pad">
-          <Tag className="col-span-full">Where to start</Tag>
+          <Tag className="col-span-full">Which website service do you need?</Tag>
           <h2 id="start" data-split className="col-span-full max-w-[16ch] text-head tight desk:col-span-9">Begin with what hurts.</h2>
         </div>
         <StartPicker />

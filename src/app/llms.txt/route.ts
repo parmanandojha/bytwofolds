@@ -5,6 +5,8 @@ export function GET() {
 
 > ${site.description}
 
+ByTwoFolds is a Delhi-based studio building websites for hospitality, interiors, education and professional-services businesses in India and abroad. Official website: ${site.url}
+
 ${about.body[2]}
 
 ## Services

@@ -2,13 +2,14 @@
 
 export const site = {
   name: "ByTwoFolds",
-  url: (process.env.NEXT_PUBLIC_SITE_URL || "https://bytwofolds.com").replace(/\/$/, ""),
+  // The one primary domain. Canonicals, og:url, sitemap and schema all use it.
+  url: "https://bytwofolds.co.in",
   // TODO: confirm real inbox before launch
-  email: "hello@bytwofolds.com",
-  title: "ByTwoFolds | Website Design, Development and Ads Agency",
+  email: "hello@bytwofolds.co.in",
+  title: "ByTwoFolds | Website Design and Meta Ads Studio in Delhi",
   description:
-    "ByTwoFolds designs and builds websites people believe, embeds scripts that help AI understand the business, and runs the Meta ads that bring the right people in.",
-  short: "Website design, development and ads agency",
+    "Delhi-based studio designing and building websites for hospitality, interiors, education and professional services, with AI reading scripts and Meta ads.",
+  short: "Website design, development and Meta ads studio in Delhi",
 };
 
 export const nav = [
@@ -26,9 +27,9 @@ export const hero = {
 };
 
 export const position = {
-  label: "Why it matters now",
+  label: "Why a credible website matters",
   title: "AI made it easy to have a website. It made it harder to be believed.",
-  body: "ByTwoFolds is a website design, development and ads agency. We build the site people check before they buy, embed scripts that help AI understand your business, and pay attention to what happens after the click.",
+  body: "ByTwoFolds is a Delhi-based studio building websites for hospitality, interiors, education and professional-services businesses in India and abroad. We build the site people check before they buy, embed scripts that help AI understand your business, and pay attention to what happens after the click.",
 };
 
 export const figures = [
@@ -151,13 +152,14 @@ export const services: Service[] = [
 ];
 
 export const sea = {
-  label: "What AI changed",
+  label: "How AI search changes website visits",
   body: "A site can be made in a minute now. So everyone made one, and they all look alike. The question is no longer whether you have a website. It is whether anyone can feel there are people behind it.",
   stats: [
-    { value: "15%", unit: "without AI", label: "of searches with no AI summary led to a click on a result" },
-    { value: "8%", unit: "with AI", label: "once an AI summary appeared. The visit you do get matters more." },
+    { value: "15%", unit: "without AI summary", label: "of Google search visits without an AI summary included a click on a result" },
+    { value: "8%", unit: "with AI summary", label: "when an AI summary appeared. The visit you do get matters more." },
   ],
-  source: "Pew Research Center, 2025",
+  source: "Source: Pew Research Center, July 2025. Browsing by 900 US adults in March 2025.",
+  sourceUrl: "https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/",
 };
 
 export const costs = [
@@ -168,7 +170,7 @@ export const costs = [
 ];
 
 export const work = {
-  label: "Selected work",
+  label: "Recent website design projects",
   title: "This is the part where you judge us.",
 };
 
@@ -275,7 +277,7 @@ export const projects: Project[] = [
 ];
 
 export const flow = {
-  label: "How it works",
+  label: "Our website design and growth process",
   title: "One website, two folds.",
   nodes: ["Start", "Go live", "Keep going"],
   steps: [
@@ -286,6 +288,7 @@ export const flow = {
 
 export const faqs = [
   { q: "What does ByTwoFolds do?", a: "ByTwoFolds designs and develops websites, embeds scripts that help AI understand the business, and runs Meta ads on Facebook and Instagram. One team looks after the ad, the page and everything between them." },
+  { q: "Where is ByTwoFolds based, and who do you work with?", a: "ByTwoFolds is based in Delhi, India. We build websites for hospitality, interiors, education and professional-services businesses in India and abroad." },
   { q: "Why does a website matter if people use AI to search?", a: "Because AI assistants build their answers from websites, and people still check yours before they pay. AI reading scripts give the assistant accurate facts, and the page gives the buyer a reason to believe them." },
   { q: "Do people really judge a business by its website?", a: "Yes. In a Stanford study of 2,684 people, 46.1% of comments about a site's credibility concerned how it looked. Other research found first impressions of a page form in about 50 milliseconds." },
   { q: "What does it mean to embed AI reading scripts?", a: "We place structured facts about your business in the code of your website. Visitors do not see them, but search engines and AI assistants can read them to learn what you do, where and for whom." },

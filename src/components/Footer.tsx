@@ -17,7 +17,7 @@ export function Footer() {
         </Link>
         <div className="col-span-full desk:col-span-3 desk:col-start-4">
           <a href={`mailto:${site.email}`} className="snug text-lead underline-offset-4 hover:underline">{site.email}</a>
-          <p className="snug mt-2 max-w-[28ch] text-base">Tell us what people get wrong about you when they see your site.</p>
+          <p className="snug mt-2 max-w-[34ch] text-base leading-snug">Delhi-based studio building websites for hospitality, interiors, education and professional-services businesses in India and abroad.</p>
         </div>
         <div className="col-span-2 tab:col-span-4 desk:col-span-2 desk:col-start-8">
           <p className="label mb-2">Services we offer</p>

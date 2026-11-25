@@ -16,6 +16,7 @@ export default function ProcessPage() {
 
       <section className="flex min-h-[calc(100svh-1rem)] flex-col bg-ink" aria-labelledby="p-h">
         <div className="site-grid gap-y-8 pt-32 desk:pt-40">
+          <p className="label col-span-full flex items-center gap-2"><span className="size-1.5 rounded-full bg-signal" aria-hidden="true" />Our website design process, in eight stages</p>
           <h1 id="p-h" data-split data-hero="0" className="col-span-full max-w-[13ch] text-hero tight desk:col-span-8">{p.title}</h1>
           <p data-fade data-hero="0.4" className="col-span-full leading-relaxed text-ash tab:col-span-5 desk:col-span-4">{p.intro}</p>
         </div>

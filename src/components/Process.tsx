@@ -30,15 +30,15 @@ export function Process() {
   );
   const step = (i: number) => (
     <li className="col-span-full max-w-md self-center tab:col-span-6 desk:col-span-3">
-      <h3 className="text-lead snug">{flow.steps[i].name}</h3>
+      <h4 className="text-lead snug">{flow.steps[i].name}</h4>
       <p className="mt-2 text-sm leading-relaxed text-ash">{flow.steps[i].body}</p>
     </li>
   );
   return (
     <section id="process" ref={root} className="bg-ink section-y" aria-labelledby="process-h">
       <div className="site-grid gap-y-6">
-        <Tag className="col-span-full">{flow.label}</Tag>
-        <h2 id="process-h" data-split className="col-span-full max-w-[12ch] text-head tight desk:col-span-8">{flow.title}</h2>
+        <Tag as="h2" className="col-span-full">{flow.label}</Tag>
+        <h3 id="process-h" data-split className="text-balance col-span-full max-w-[12ch] text-head tight desk:col-span-8">{flow.title}</h3>
       </div>
       <ol data-flow className="site-grid head-gap gap-y-10">
         {node(a, "bg-signal text-ink")}

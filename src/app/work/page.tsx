@@ -1,14 +1,14 @@
 import { projects, work } from "@/lib/content";
-import { JsonLd, breadcrumbs, pageMeta } from "@/lib/schema";
+import { JsonLd, breadcrumbs, pageMeta, workList } from "@/lib/schema";
 import { PageHead } from "@/components/PageHead";
 import { ProjectCard } from "@/components/ProjectCard";
 
-export const metadata = pageMeta("Website Design Work", "Selected websites and campaigns designed, built and run by ByTwoFolds.", "/work");
+export const metadata = pageMeta("Website Design Projects", "Websites by ByTwoFolds for a hill stay, an interior design studio, two schools and a New York tax practice.", "/work");
 
 export default function Work() {
   return (
     <>
-      <JsonLd data={breadcrumbs([["Work", "/work"]])} />
+      <JsonLd data={[breadcrumbs([["Work", "/work"]]), workList]} />
       <PageHead tag={work.label} title={work.title}><p>Look the way your customers look: quickly first, then slowly.</p></PageHead>
       <ul className="grid gap-2 bg-ink section-b tab:grid-cols-2 desk:grid-cols-6">
         {projects.map((p, i) => (
