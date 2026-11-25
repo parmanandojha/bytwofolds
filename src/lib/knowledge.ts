@@ -42,7 +42,7 @@ const price = /\b(price|pricing|cost|costs|charge|fee|fees|budget|rate|rates|quo
 export function localAnswer(q: string) {
   if (/^\s*(hi|hello|hey|namaste|good (morning|afternoon|evening))\b[\s!.]*$/i.test(q)) return "Hello. Ask me about our services, process or work, or tell me what is not working on your website.";
   if (price.test(q)) return "We do not list prices, because the cost depends on the pages, content and ads you need. Leave your details and a person will reply about your project.";
-  if (/what (do|does|can) (you|bytwofolds|this company|your (company|agency|team)) (do|offer|provide)|your services|services (do you|you) offer/i.test(q)) return `${faqs[0].a}\n\nSee each service: /services`;
+  if (/what (do|does|can) (you|bytwofolds|this company|your (company|agency|team)) (do|offer|provide)|your services|services (do you|you) offer/i.test(q)) return `${faqs.find((f) => f.q === "What does ByTwoFolds do?")!.a}\n\nSee each service: /services`;
   if (/\b(portfolio|case stud|past (work|projects?)|your (recent )?(work|projects|clients)|examples?)\b/i.test(q) && !/\bhow\b/i.test(q)) return `Recent work: ${projects.map((p) => `${p.name} (${p.sector})`).join(", ")}.\n\nSee it here: /work`;
   if (/\b(where|located|location|based|city|country|delhi|address|office)\b/i.test(q)) return "ByTwoFolds is based in Delhi, India, and works with businesses in India and abroad.\n\nMore: /about";
   if (/who (are|is) (you|bytwofolds)/i.test(q)) return `${position.body}\n\nMore: /about`;

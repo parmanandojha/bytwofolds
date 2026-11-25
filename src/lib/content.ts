@@ -287,6 +287,7 @@ export const flow = {
 };
 
 export const faqs = [
+  { q: "What is bytwofolds.co.in?", a: "bytwofolds.co.in is the official website of ByTwoFolds, a Delhi-based studio that designs and builds websites, embeds AI reading scripts and runs Meta ads for businesses in India and abroad." },
   { q: "What does ByTwoFolds do?", a: "ByTwoFolds designs and develops websites, embeds scripts that help AI understand the business, and runs Meta ads on Facebook and Instagram. One team looks after the ad, the page and everything between them." },
   { q: "Where is ByTwoFolds based, and who do you work with?", a: "ByTwoFolds is based in Delhi, India. We build websites for hospitality, interiors, education and professional-services businesses in India and abroad." },
   { q: "Why does a website matter if people use AI to search?", a: "Because AI assistants build their answers from websites, and people still check yours before they pay. AI reading scripts give the assistant accurate facts, and the page gives the buyer a reason to believe them." },
