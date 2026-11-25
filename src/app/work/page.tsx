@@ -10,9 +10,9 @@ export default function Work() {
     <>
       <JsonLd data={breadcrumbs([["Work", "/work"]])} />
       <PageHead tag={work.label} title={work.title}><p>Look the way your customers look: quickly first, then slowly.</p></PageHead>
-      <ul className="grid gap-2 bg-ink section-b tab:grid-cols-2">
+      <ul className="grid gap-2 bg-ink section-b tab:grid-cols-2 desk:grid-cols-6">
         {projects.map((p, i) => (
-          <li key={p.slug}><ProjectCard p={p} eager={i < 2} /></li>
+          <li key={p.slug} className={`${i < 2 ? "desk:col-span-3" : "desk:col-span-2"} ${i === projects.length - 1 && i % 2 === 0 ? "tab:max-desk:col-span-2 tab:max-desk:[&>a]:aspect-[8/5]" : ""}`}><ProjectCard p={p} eager={i < 2} /></li>
         ))}
       </ul>
     </>

@@ -40,7 +40,7 @@ clients, results, awards or team counts. Every number carries a source.
 | `/services/meta-ads` | Service | Meta ads agency |
 | `/services/website-care` | Service | website maintenance and updates |
 | `/work` | Project index | website design portfolio |
-| `/work/dandelion-by-the-hills`, `/work/gk-intriors`, `/work/bn-public-school`, `/work/212-tax` | Case studies | brand + case study |
+| `/work/dandelion-by-the-hills`, `/work/gk-intriors`, `/work/bn-public-school`, `/work/neo-ambience-academy`, `/work/212-tax` | Case studies | brand + case study |
 | `/process` | Eight stages: what happens, what you get, what we need | website design process |
 | `/about` | Why we exist, how we work | about ByTwoFolds |
 | `/contact` | Inquiry form with UTM capture | hire a website design agency |
